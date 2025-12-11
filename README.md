@@ -15,8 +15,9 @@ The following Python libraries must be installed prior to running the notebook:
 
 These can also be installed by running the first cell in the notebook. There you must choose whether to install PyTorch with CUDA support or with CPU support.
 
-The dataset files posted on Studium must be downloaded. Unzip the files into a single `dataset` folder. The folder structure needs to be changed slightly, and should have the following 
+The dataset files posted on Studium must be downloaded. Unzip the files into a single `dataset` folder. The folder hierarchy needs to be changed slightly, and should have the following structure:
 
+```
 dataset
    ├── HR\_REF\_masks
    │   ├── Pos101
@@ -26,6 +27,7 @@ dataset
        ├── Pos101
        ├── Pos102
         ... 
+```
 
 That is, the `PosXXX` folders must go udirectly under each experiment folder. For each `raw_data` folder there must be a folder with the same name, but with `raw_data` replaced with `masks`. The code will automatically load images from each experiment under the configured `dataset` folder.
 
