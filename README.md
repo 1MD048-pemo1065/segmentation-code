@@ -52,7 +52,7 @@ After finishing training, the best model should have been saved, and a test segm
 
 ## My results
 
-I trained the U-Net model for 250 epochs using all data published to Studium. The dataset split was done based on the PosXXX folder name (folders ending in 09, 10, 19, 20 were chosen as validatiomn set).
+I trained the U-Net model for 250 epochs using all data published to Studium. The dataset split was done based on the PosXXX folder name (folders ending in 09, 10, 19, 20 were chosen as validation set).
 
 The model achieved a Dice score of 95% on the validation set, and 96% on the training set, so overfitting seems to not have been an issue. Since the model is quite simple with just 4.4 M parameters, this may also have helped to reduce overfitting.
 
