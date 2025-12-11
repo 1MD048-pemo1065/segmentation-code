@@ -23,11 +23,11 @@ The dataset files posted on Studium must be downloaded. Unzip the files into a s
 
 ```
 dataset
-   ├── HR\_REF\_masks
+   ├── HR_REF_masks
    │   ├── Pos101
    │   ├── Pos102
    │    ... 
-   ├── HR\_REF\_raw\_data
+   ├── HR_REF_raw_data
        ├── Pos101
        ├── Pos102
         ... 
