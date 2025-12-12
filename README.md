@@ -4,7 +4,7 @@ This repository contains a Jupyter notebook for training a U-Net model on a subs
 
 ## Description
 
-The U-Net implementation is a slightly modified version of the one described in the research paper by Visuña at al., available at https://doi.org/10.1016/j.engappai.2025.112503. The model is a simplified version of the original U-Net model, having just 4.4 million parameters. In their paper, they trained their model using manually and automatically annotated ground truth images, using time-lapse microscopy images as raw input to the model, similar to the ones used in the Tran et al. paper. For my implementation, I used the output segmentations from the Omnipose model as ground truth, meaning that the Omnipose model acts as a teacher model, while the U-Net model is the student model. The goal of the training is to distill the knowledge of the Omnipose model into the much smaller and simpler U-Net model.
+The U-Net implementation is a slightly modified version of the one described in the research paper by Visuña at al., available at https://doi.org/10.1016/j.engappai.2025.112503. Their model is a simplified version of the original U-Net model, having just 4.4 million parameters. In their paper, they trained their model using manually and automatically annotated ground truth images, using time-lapse microscopy images as raw input to the model, similar to the ones used in the Tran et al. paper. For my implementation, I used the output segmentations from the Omnipose model as ground truth, meaning that the Omnipose model acts as a teacher model, while the U-Net model is the student model. The goal of the training is to distill the knowledge of the Omnipose model into the much smaller and simpler U-Net model.
 
 ## Prerequisites
 
