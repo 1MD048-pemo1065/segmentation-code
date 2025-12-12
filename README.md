@@ -10,6 +10,7 @@ The U-Net implementation is a slightly modified version of the one described in 
 
 The following Python libraries must be installed prior to running the notebook:
 
+* `notebook`
 * `torch`
 * `torchvision`
 * `pillow`
@@ -17,9 +18,9 @@ The following Python libraries must be installed prior to running the notebook:
 * `tqdm`
 * `matplotlib`
 
-These can also be installed by running the first cell in the notebook. There you must choose whether to install PyTorch with CUDA support or with CPU support.
+These can also be installed by running the first cell in the notebook (except the `notebook` dependency). There you must choose whether to install PyTorch with CUDA support or with CPU support.
 
-The dataset files posted on Studium must be downloaded. Unzip the files into a single `dataset` folder. The folder hierarchy needs to be changed slightly, and should have the following structure:
+The dataset files posted on Studium must be downloaded, and a file extension of .zip may need to be added to allow extraction. Unzip the files into a single `dataset` folder. After unzipping, you will probably have  duplicate folders (for example, under the `REF_masks` folder there will be another folder named `REF_masks`). For the training top work, the contents of the second folde rshould be moved up one level in the folder hierarchy, so that we end up with the following folder structure:
 
 ```
 dataset
@@ -43,6 +44,8 @@ Look for the following lines in the notebook and replace the parameters with val
 EPOCHS = 250
 DATASET_PATH = "/path/to/dataset"
 ```
+
+Start the notebook using `jupyter notebook` and open it by browsing to http://localhost:8888.
 
 On a fast GPU, using all data published in Studium, 250 epochs took a bit over 6 hours to complete, so it's probably a good idea to lower that a bit.
 
