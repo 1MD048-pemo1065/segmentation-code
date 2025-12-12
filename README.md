@@ -20,7 +20,7 @@ The following Python libraries must be installed prior to running the notebook:
 
 These can also be installed by running the first cell in the notebook (except the `notebook` dependency). There you must choose whether to install PyTorch with CUDA support or with CPU support.
 
-The dataset files posted on Studium must be downloaded, and a file extension of .zip may need to be added to allow extraction. Unzip the files into a single `dataset` folder. After unzipping, you will probably have  duplicate folders (for example, under the `REF_masks` folder there will be another folder named `REF_masks`). For the training top work, the contents of the second folde rshould be moved up one level in the folder hierarchy, so that we end up with the following folder structure:
+The dataset files posted on Studium must be downloaded, and a file extension of .zip may need to be added to allow extraction. Unzip the files into a single `dataset` folder. After unzipping, you will probably have  duplicate folders (for example, under the `REF_masks` folder there will be another folder named `REF_masks`). For the training top work, the contents of the second folder should be moved up one level in the hierarchy, so that we end up with the following folder structure:
 
 ```
 dataset
