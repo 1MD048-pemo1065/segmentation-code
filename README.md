@@ -1,6 +1,6 @@
 # Segmentation training
 
-This repository contains a Jupyter notebook for training a U-Net model on a subset of the data from the Tran et al. research paper.
+This repository contains a Jupyter notebook for training a U-Net model for binary segmentation of mycobacteria on a subset of the data from the Tran et al. research paper. 
 
 ## Description
 
